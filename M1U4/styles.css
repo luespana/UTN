@@ -1,0 +1,19 @@
+p {
+  font-size: 20px;
+  /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+  line-height: 25px;
+}
+
+h1 {
+  color: grey;
+  background-color: rgb(60, 61, 59);
+}
+.imagen {
+  width: auto;
+  height: 50vh;
+}
+
+h2 {
+  color: brown;
+  /*text-transform: uppercase; Mayusculas*/
+}
