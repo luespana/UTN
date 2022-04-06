@@ -1,3 +1,6 @@
+body{
+  background-color: white;
+}
 p {
   font-size: 20px;
   /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
@@ -16,4 +19,34 @@ h1 {
 h2 {
   color: brown;
   /*text-transform: uppercase; Mayusculas*/
+}
+
+.primero{
+  color: blue;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#verde{
+  width: 400px;
+  height: 200px;
+  background-color: rgb(72, 161, 72);
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border: 2px solid black; 
+}
+
+#naranja{
+  width: 400px;
+  height: 200px;
+  background-color: rgb(211, 143, 40);
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border: 2px solid black;
 }
