@@ -1,0 +1,38 @@
+body{
+        background-color: white;
+    }
+ h1 { 
+    font-family: 'Montserrat', sans-serif;
+    }   
+.caja{
+        width: 400px;
+        height: 300px;
+        margin: 50px;
+        font-family: 'Space Mono', monospace;
+        /*background-color: rgb(90, 62, 62);*/
+        background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+        /*css gnerator para gradient*/
+        /*https://webgradients.com/*/
+        /*https://cssgenerator.org/*/
+
+        color: black;
+        padding: 20px;
+        box-sizing: border-box;
+        /*border-radius: 20px;*/
+        border-radius: 20px 0 20px 50px;
+        box-shadow: 14px 16px 44px -12px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 14px 16px 44px -12px rgba(0,0,0,0.75);
+        -moz-box-shadow: 14px 16px 44px -12px rgba(0,0,0,0.75);
+        column-count: 2;
+        column-gap: 40px;
+        column-rule: 1px dashed black;
+    }
+    
+.caja p{
+        margin: 0;
+    }
+.sign-in{ 
+        color: blue;
+        font-size: 20px;
+
+    }   
