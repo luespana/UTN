@@ -36,3 +36,9 @@ aside {
 	float: right;
 	width: 190px;
 }
+
+@media (max-width: 800px){
+	#contenedor{
+		background-color: aqua;
+	}
+}
