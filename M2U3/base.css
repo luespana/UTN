@@ -39,6 +39,22 @@ aside {
 
 @media (max-width: 800px){
 	#contenedor{
-		background-color: aqua;
+		background-color: #718571;
+	}
+}
+@media screen and (max-width:800px){
+	nav{
+		background-color: rgb(248, 222, 105);
+		width: 100%;
+	}
+	a{
+		color: #000;
+	}
+	section{
+		width: 100%;
+		margin: 0 0 0 0px
+	}
+	aside{
+		width: 100%;
 	}
 }
