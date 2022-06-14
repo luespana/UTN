@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01</title>
+  </head>
+  <!--document.body.style.backgroundColor = "blue"-->
+  <body>
+    <div
+      id="cuadradoBlue"
+      style="height: 100px; width: 100px; background-color: blue"
+    ></div>
+    <div
+      id="cuadradoOrange"
+      style="height: 100px; width: 100px; background-color: orange"
+    ></div>
+    <div
+      id="cuadradoGreen"
+      style="height: 100px; width: 100px; background-color: green"
+    ></div>
+  </body>
+</html>
+
+<script>
+  var azul = document.getElementById("cuadradoBlue");
+  azul.addEventListener("mouseover", function(){
+    document.body.style.backgroundColor = "blue"
+  })
+  var naranja = document.getElementById("cuadradoOrange");
+  naranja.addEventListener("mouseover", function(){
+    document.body.style.backgroundColor = "orange"
+  })
+  var verde = document.getElementById("cuadradoGreen");
+  verde.addEventListener("mouseover", function(){
+    document.body.style.backgroundColor = "green"
+  })
+</script>
+
+<style>
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+</style>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+</head>
+<body>
+    <textarea id="textarea" cols="30" rows="10"  ></textarea>
+    <p>Contador <strong id="contador"></strong></p>
+</body>
+</html>
+
+<script>
+    var textarea = document.getElementById("textarea")
+    var contador = document.getElementById("contador")
+    textarea.addEventListener("keyup", function(){
+        contador.innerText = textarea.value.length
+    })
+   
+</script>
