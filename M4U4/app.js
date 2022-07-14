@@ -33,13 +33,32 @@ app.use(
 //app.use('/users', usersRouter);
 
 app.get("/", function (req, res) {
-  var conocido = Boolean(req.session.nombre);
+  var usuarioAutenticado = Boolean(req.session.usuario);
 
   res.render("index", {
-    title: "Sesiones con express.js",
-    conocido: conocido,
-    nombre: req.session.nombre,
+    title: "Ingrese su usuario y contraseña",
+    usuarioAutenticado: usuarioAutenticado,
+    usuario: req.session.usuario,
+    error: ''
   });
+});
+
+app.post("/ingresar", function (req, res) {
+  var contraseñaDataBase = "spanish";
+
+  if (req.body.password === contraseñaDataBase) {
+    if (req.body.usuario) {
+      req.session.usuario = req.body.usuario;
+    }
+    res.redirect("/");
+  } else {
+    console.error('Contraseña incorrecta')
+  }
+});
+
+app.get("/salir", function (req, res) {
+  req.session.destroy();
+  res.redirect("/");
 });
 
 // catch 404 and forward to error handler

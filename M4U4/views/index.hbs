@@ -1,10 +1,15 @@
 <h1>{{title}}</h1>
-{{#if conocido}}
-<p>Hola {{nombre}} <a href="/salir">salir</a> </p>
+{{#if usuarioAutenticado}}
+<p>Hola {{usuario}} <a href="/salir">Salir</a> </p>
 {{/if}}
-{{#unless conocido}}
-<p>No te conozco</p>
+{{#unless usuarioAutenticado}}
+<p>Usuario no registrado</p>
+<h4>{{error}}</h4>
 <form action="/ingresar" method="post">
-    <input type="text" name="nombre"> <button>Ingresar</button>
+    <input type="text" name="usuario" placeholder="Usuario" >
+    <br>
+    <input type="password" name="password" placeholder="Contraseña" > 
+    <br>
+    <button>Ingresar</button>
 </form>
 {{/unless}}
